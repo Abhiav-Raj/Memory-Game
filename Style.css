@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+.main h1 {
+    font-size: 40px;
+    color: azure; 
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Grid-size {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 20px; 
+}
+
+.Grid-size h2 {
+    color: white;
+}
+
+.Grid-size #value {
+    color: white;
+}
+
+.Grid-size i {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.blocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 15px;
+    width: auto; 
+    height: auto;
+    padding: 20px;
+    margin-top: 20px;
+    max-height: 70vh; /* Maximum height */
+    overflow-y: auto; /* Vertical scrolling */
+}
+
+.min-blocks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.min-blocks h3 {
+    opacity: 0;
+}
+button{
+    padding: 5px;
+    border-radius: 30px;
+    background-color: aliceblue;
+}
+button h4{
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+button:hover{
+    background-color: rgb(163, 206, 243);
+}
