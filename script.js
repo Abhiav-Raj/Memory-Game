@@ -80,7 +80,7 @@ function resetBlocks() {
 }
 
 plus.addEventListener("click", () => {
-    if (counter < 20) {
+    if (counter < 12) {
         counter++;
         document.querySelector("#value").innerHTML = counter;
         updateBlocks();
